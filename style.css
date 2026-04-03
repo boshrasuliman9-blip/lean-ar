@@ -40,13 +40,18 @@ body { font-family:'Tajawal', system-ui, sans-serif; background-color:#f4f4f0; b
   padding:14px;
 }
 #btn-stop {
-  background: #1e1b4b;
+  background: #6b7280;
   color: #fff;
-  box-shadow: 0 8px 0px #0a0a1f;
-  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 0px #374151;
+  border: none;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+}
+#btn-stop:hover {
+  opacity: 1;
 }
 #btn-stop:active {
-  box-shadow: 0 0px 0px #0a0a1f;
+  box-shadow: 0 0px 0px #374151;
   transform: translateY(8px) translateX(-50%);
 }
 
