@@ -1,6 +1,6 @@
 * { box-sizing:border-box; margin:0; padding:0; }
 body { font-family:'Tajawal', system-ui, sans-serif; background-color:#f4f4f0; background-image: radial-gradient(#e5e5e0 2px, transparent 2px); background-size: 24px 24px; min-height:100vh; color:#1a1a1a; }
-#credit { position:fixed; bottom:8px; right:12px; font-size:14px; color:#aaa; z-index:9999; }
+#credit { position:fixed; bottom:8px; left:50%; transform:translateX(-50%); font-size:14px; color:#aaa; z-index:9999; text-align:center; white-space:nowrap; }
 #logo { position:fixed; top:0; left:0; width:70px; z-index:100; }
 
 /* ─── START ─── */
@@ -29,8 +29,8 @@ body { font-family:'Tajawal', system-ui, sans-serif; background-color:#f4f4f0; b
 }
 .btn-bottom {
   position:absolute;
-  bottom:40px;
-  bottom:calc(40px + env(safe-area-inset-bottom, 0px));
+  bottom:70px;
+  bottom:calc(70px + env(safe-area-inset-bottom, 0px));
   left:50%;
   transform:translateX(-50%);
   width:220px !important;
