@@ -61,7 +61,12 @@ const LEVELS: Level[] = [
 ];
 const PER = 3;
 const NAMES = ["الأولى", "الثانية", "الثالثة", "الرابعة", "الخامسة"];
-const COLORS: Record<string, string> = { red: "#ef4444", green: "#10b981", yellow: "#f59e0b", blue: "#3b82f6" };
+const COLORS: Record<string, string> = { 
+  red: "radial-gradient(circle at center, #fca5a5, #ef4444)", 
+  green: "radial-gradient(circle at center, #6ee7b7, #10b981)", 
+  yellow: "radial-gradient(circle at center, #fde047, #f59e0b)", 
+  blue: "radial-gradient(circle at center, #93c5fd, #3b82f6)" 
+};
 const DIR_TEXT: Record<string, string> = { red: "يمين", green: "يسار", yellow: "أمام", blue: "خلف" };
 
 function lv(): Level { return LEVELS[currentLevel]; }
@@ -75,9 +80,10 @@ function stars(n: number): void {
     s.className = 'star';
     s.textContent = '★';
     s.style.color = i < n ? '#FFD700' : 'rgba(255,255,255,.3)';
+    s.style.textShadow = i < n ? '0 0 15px rgba(245, 158, 11, 0.8)' : 'none';
     if (i === n - 1 && n > 0) {
-      s.style.transform = 'scale(1.4)';
-      setTimeout(() => { s.style.transform = 'scale(1)'; }, 300);
+      s.style.transform = 'scale(1.5) rotate(20deg)';
+      setTimeout(() => { s.style.transform = 'scale(1) rotate(0deg)'; }, 400);
     }
     r.appendChild(s);
   }
