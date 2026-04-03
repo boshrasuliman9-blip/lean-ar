@@ -49,9 +49,9 @@ let total = 0;
 let levelStars = 0;
 let currentLevel = 0;
 const LEVELS = [
-    { n: 1, hold: 2000, gap: 1000, colors: ['red', 'green'], desc: '<span style="color:#ef4444">الأحمر</span> ⬅️ يمين\n<span style="color:#10b981">الأخضر</span> ⬅️ يسار' },
-    { n: 2, hold: 1500, gap: 800, colors: ['red', 'green', 'yellow'], desc: '<span style="color:#f59e0b">الأصفر</span> ⬅️ أمام\n+ القواعد السابقة' },
-    { n: 3, hold: 1000, gap: 600, colors: ['red', 'green', 'yellow', 'blue'], desc: '<span style="color:#3b82f6">الأزرق</span> ⬅️ خلف\n+ القواعد السابقة' },
+    { n: 1, hold: 2000, gap: 1000, colors: ['red', 'green'], desc: '<span style="color:#ef4444">الأحمر</span> ← يمين\n<span style="color:#10b981">الأخضر</span> ← يسار' },
+    { n: 2, hold: 1500, gap: 800, colors: ['red', 'green', 'yellow'], desc: '<span style="color:#ef4444">الأحمر</span> ← يمين\n<span style="color:#10b981">الأخضر</span> ← يسار\n<span style="color:#f59e0b">الأصفر</span> ← أمام' },
+    { n: 3, hold: 1000, gap: 600, colors: ['red', 'green', 'yellow', 'blue'], desc: '<span style="color:#ef4444">الأحمر</span> ← يمين\n<span style="color:#10b981">الأخضر</span> ← يسار\n<span style="color:#f59e0b">الأصفر</span> ← أمام\n<span style="color:#3b82f6">الأزرق</span> ← خلف' },
     { n: 4, hold: 700, gap: 400, colors: ['red', 'green', 'yellow', 'blue'], desc: 'أسرع!' },
     { n: 5, hold: 500, gap: 300, colors: ['red', 'green', 'yellow', 'blue'], desc: 'سرعة قصوى!' }
 ];
